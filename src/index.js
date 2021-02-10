@@ -1,4 +1,4 @@
 // Importing Bootstrap
-const bootstrap = require('bootstrap');
+import 'bootstrap';
 
 console.log("Modules Loaded");
