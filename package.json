@@ -1,0 +1,28 @@
+{
+  "name": "website-resume",
+  "version": "1.0.0",
+  "description": "A resume website built in PUG and bootstrap for front-end development",
+  "main": "dest/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Midlight25/website-resume.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "Javascript",
+    "Typescript",
+    "Snowpack",
+    "Pug",
+    "Bootstrap"
+  ],
+  "author": "Michael Mesquita",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Midlight25/website-resume/issues"
+  },
+  "homepage": "https://github.com/Midlight25/website-resume#readme"
+}
