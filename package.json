@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/Midlight25/website-resume/issues"
   },
-  "homepage": "https://github.com/Midlight25/website-resume#readme"
+  "homepage": "https://github.com/Midlight25/website-resume#readme",
+  "devDependencies": {
+    "pug": "^3.0.0"
+  }
 }
