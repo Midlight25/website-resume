@@ -4,20 +4,22 @@
   "description": "A resume website built in PUG and bootstrap for front-end development",
   "main": "dest/index.html",
   "scripts": {
-    "serve": "parcel serve src/index.pug"
+    "dev": "parcel serve src/index.pug",
+    "build": "parcel build src/index.pug"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Midlight25/website-resume"
   },
   "keywords": [
-    "html",
-    "css",
+    "HTML",
+    "CSS",
     "Javascript",
     "Typescript",
     "Parcel",
     "Pug",
-    "Bootstrap"
+    "Bootstrap",
+    "Sass"
   ],
   "author": "Michael Mesquita",
   "license": "MIT",
