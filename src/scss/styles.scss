@@ -1,2 +1,11 @@
+// Importing Variables
+@import './_variables.scss';
+
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
+
+// Import Bootstrap Icons
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Importing Components
+@import './components/sidebarNav.scss'

@@ -2,19 +2,51 @@ doctype html
 html(lang='en')
 	head
 		title Michael Mesquita - Modern Front-End Developer
+
+		meta(charset="utf-8")
+		meta(name='description', content='A web resume built using Pug, Sass, Typescript, and Bootstrap v5. Developed and bundled with Parcel. This website demos fast and agile front end development using modern tools, bringing technologies of the future, today. Kudos to Bootstrap for their amazing front-end development framework and their icons. Inspired by the startboostrap-resume project by StartBootstrap.com.')
+		meta(name='author', content='Michael Mesquita A.K.A Midlight25 (mesquitamichael000@gmail.com)')
+		meta(name='keywords', content='HTML, HTML5, CSS, SCSS, SASS, JavaScript, TypeScript, Pug, Node.js, Parcel, Front-End Development, Development, Website Development')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		// Importing main SCSS file, which it's self imports Bootstrap 5 for me to use.
 		link(href='./scss/styles.scss', rel="stylesheet")
-	body
-		h1#firstHeading Hello World
 
-		p This is my first website. I kinda like this.
+	// I want this website to have a very "business-card" like feel.
+	body#pageTop
 
-		h2 I don't really hate you.
+		// Navigation - Side-bar nav on desktops, classic navbar on mobile.
+		nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+			// My name, only appears while the nav is in classic mode on small screens.
+			a.navbar-brand
+				span.d-block.d-lg-none Michael Mesquita
 
-		h3 I still don't like you. Hiya
+				// My photo replaces my name when the nav is in side mode on bigger screens.
+				span.d-none.d-lg-block
+					img#profilePicture.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='./assets/Atlantic-13.jpg', alt='A picture of the dashing and handsome developer in a three-piece suit.')
 
-		h4 Why hello there little one.
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='$navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+				i.bi.bi-three-dots(style='font-size: 3rem;')
+			// Actual navigation links
+			#navbarSupportedContent.container-fluid
+				ul.navbar-nav
+					li.nav-item
+						a.nav-link(href="#about") About
+					li.nav-item
+						a.nav-link(href="#about") About
+					li.nav-item
+						a.nav-link(href="#about") About
+					li.nav-item
+						a.nav-link(href="#about") About
+					li.nav-item
+						a.nav-link(href="#about") About
+					li.nav-item
+						a.nav-link(href="#about") About
 
-		h5 It seems as though you need a bit of an attitude adjustment.
+		// Body Content for Resume		
+		.container
+			h1 Test Content
+			p Tests for everyone
 
 	script(src="./index.js")
 
