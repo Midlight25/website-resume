@@ -16,37 +16,38 @@ html(lang='en')
 	body#pageTop
 
 		// Navigation - Side-bar nav on desktops, classic navbar on mobile.
-		nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
-			// My name, only appears while the nav is in classic mode on small screens.
-			a.navbar-brand
-				span.d-block.d-lg-none Michael Mesquita
+		nav#sideNav
 
-				// My photo replaces my name when the nav is in side mode on bigger screens.
-				span.d-none.d-lg-block
-					img#profilePicture.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='./assets/Atlantic-13.jpg', alt='A picture of the dashing and handsome developer in a three-piece suit.')
+			// The brand switches between my Profile Picture and my name, depending on what size the screen is at.
+			.container-fluid
+				a.navbar-brand
+					// My name for small screens with the standard nav-bar.
+					span.d-block.d-lg-none(style="font-size:2rem;") Michael Mesquita
+					// My image for bigger screens with the sidebar.
+					span.d-none.d-lg-block
+						img#profilePicture.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='./assets/Atlantic-13.jpg', alt='A picture of the dashing and handsome developer in a three-piece suit.')
 
-			button.navbar-toggler(type='button', data-toggle='collapse', data-target='$navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-				i.bi.bi-three-dots(style='font-size: 3rem;')
-			// Actual navigation links
-			#navbarSupportedContent.container-fluid
+				button.navbar-toggler(type='button', data-toggle='collapse', data-target='$navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+					i.bi.bi-three-dots(style='font-size: 2rem;')
+
+				// The links for stuff
 				ul.navbar-nav
 					li.nav-item
-						a.nav-link(href="#about") About
+						a.nav-link About
 					li.nav-item
-						a.nav-link(href="#about") About
+						a.nav-link Experience
 					li.nav-item
-						a.nav-link(href="#about") About
+						a.nav-link Education
 					li.nav-item
-						a.nav-link(href="#about") About
+						a.nav-link Skills
 					li.nav-item
-						a.nav-link(href="#about") About
-					li.nav-item
-						a.nav-link(href="#about") About
+						a.nav-link Interests
 
-		// Body Content for Resume		
+
+		// Body Content for Resume
 		.container
 			h1 Test Content
 			p Tests for everyone
+			button#exampleTooltip.btn.btn-primary(type='button', data-bs-toggle='tooltip', title='Some tooltip text!') Hover over me
 
-	script(src="./index.js")
-
+		script(src="./index.js")
