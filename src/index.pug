@@ -16,33 +16,32 @@ html(lang='en')
 	body#pageTop
 
 		// Navigation - Side-bar nav on desktops, classic navbar on mobile.
-		nav#sideNav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
-			.container-fluid
+		nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.sticky-top.container
 
-				// The brand switches between my Profile Picture and my name, depending on what size the screen is at.
-				a.navbar-brand(href='#')
-					// My name for small screens with the standard nav-bar.
-					span.d-block.d-lg-none(style="font-size:1.5rem;") Michael Mesquita
-					// My image for bigger screens with the sidebar.
-					span.d-none.d-lg-block
-						img#profilePicture.img-fluid.rounded-circle.mx-auto.mb-2(src='./assets/Atlantic-13.jpg', alt='A picture of the dashing and handsome developer in a three-piece suit.')
+			// The brand switches between my Profile Picture and my name, depending on what size the screen is at.
+			a.navbar-brand(href='#')
+				// My name for small screens with the standard nav-bar.
+				span.d-block.d-lg-none(style="font-size:1.5rem;") Michael Mesquita
+				// My image for bigger screens with the sidebar.
+				span.d-none.d-lg-block
+					img#profilePicture.img-fluid.rounded-circle.mx-auto.mb-2(src='./assets/Atlantic-13.jpg', alt='A picture of the dashing and handsome developer in a three-piece suit.')
 
-				button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarContent', aria-controls='navbarContent', aria-expanded='false', aria-label='Toggle navigation')
-					i.navbar-toggler-icon
+			button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarContent', aria-controls='navbarContent', aria-expanded='false', aria-label='Toggle navigation')
+				i.navbar-toggler-icon
 
-				// The links for stuff
-				#navbarContent.collapse.navbar-collapse
-					ul.navbar-nav
-						li.nav-item
-							a.nav-link About
-						li.nav-item
-							a.nav-link Experience
-						li.nav-item
-							a.nav-link Education
-						li.nav-item
-							a.nav-link Skills
-						li.nav-item
-							a.nav-link Interests
+			// The links for stuff
+			#navbarContent.collapse.navbar-collapse
+				ul.navbar-nav
+					li.nav-item
+						a.nav-link About
+					li.nav-item
+						a.nav-link Experience
+					li.nav-item
+						a.nav-link Education
+					li.nav-item
+						a.nav-link Skills
+					li.nav-item
+						a.nav-link Interests
 
 
 		// Body Content for Resume
