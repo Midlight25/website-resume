@@ -1,0 +1,22 @@
+section.resume-section {
+  display: flex;
+  align-items: center;
+  padding: 5rem 1rem 5rem 1rem;
+  max-width: 75rem;
+  .resume-section-content {
+    // Content should take up all of the space aloted inside of it's parent element.
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  section.resume-section {
+    padding: 5rem 3rem 5rem 3rem;
+  }
+}
