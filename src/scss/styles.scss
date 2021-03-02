@@ -1,5 +1,5 @@
 // Importing Variables
-@import "./variables";
+@import "variables";
 
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
@@ -8,7 +8,7 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
 // Importing Components
-@import "./global";
-@import "./sections/resume-section";
-@import "./components/sidebarNav";
-@import "./components/icons";
+@import "global";
+@import "sections/resume-section";
+@import "components/icons";
+@import "components/sidebarNav";

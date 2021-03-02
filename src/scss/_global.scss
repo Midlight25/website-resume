@@ -1,9 +1,11 @@
 // Global Styling for the website.
 
+// Set background color
 body {
   color: $gray-600;
 }
 
+// Change body alignment setup to use side nav bar.
 @include media-breakpoint-up(lg) {
   body {
     padding-top: 0;
@@ -29,6 +31,7 @@ p.lead {
   font-weight: 400;
 }
 
+// Create new subheading class for about section
 .subheading {
   font-family: $headings-font-family;
   text-transform: uppercase;
@@ -36,6 +39,7 @@ p.lead {
   font-size: 1.5rem;
 }
 
+// Global modify links to look nicer.
 a {
   text-decoration: none;
   &:hover {
