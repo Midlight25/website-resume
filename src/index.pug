@@ -9,6 +9,10 @@ html(lang='en')
 		meta(name='keywords', content='HTML, HTML5, CSS, SCSS, SASS, JavaScript, TypeScript, Pug, Node.js, Parcel, Front-End Development, Development, Website Development')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 
+		// Importing Fonts from Google Fonts
+		link(rel="preconnect", href="https://fonts.gstatic.com")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;700&family=Comfortaa:wght@400;500;700&display=swap")
+
 		// Importing main SCSS file, which it's self imports Bootstrap 5 for me to use.
 		link(href='./scss/styles.scss', rel="stylesheet")
 
@@ -16,7 +20,7 @@ html(lang='en')
 	body#pageTop
 
 		// Navigation - Side-bar nav on desktops, classic navbar on mobile.
-		nav#sideNav.nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.sticky-top.px-4
+		nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.sticky-top.px-4
 
 			// The brand switches between my Profile Picture and my name, depending on what size the screen is at.
 			a.navbar-brand(href='#')
@@ -55,7 +59,7 @@ html(lang='en')
 					.subheading.mb-5 Deerfield Beach, FL 33442 &bull; 
 						| #[a(href="tel:9545734686") (954) 573-4686] &bull; 
 						| #[a(href="mailto:mesquitamichael000@gmail.com").d-none.d-lg-inline mesquitamichael000@gmail.com]
-						| #[a(href="mailto:mesquitamichael000@gmail.com").text-primary.d-inline.d-lg-none email]
+						| #[a(href="mailto:mesquitamichael000@gmail.com").text-primary.d-inline.d-lg-none email me]
 					p.lead.mb-5 Developing solutions from the future using agile frameworks and automation to deliver continuous and rapid development that stops for nobody. 
 						| Let's think collaboratively and work together to make technology seem like magic.
 					.social_icons

@@ -1,8 +1,20 @@
-// Spacing Variables
-$sidebar-width: 17rem;
-$spacer: 1rem;
+/*
+	COPYWRITE NOTICE: Parts of this code reuse the startbootstrap-resume project by Startbootstrap.com. These
+	parts of the code are licensed under MIT. Please see the copyright notice file for more details.
+*/
 
-// Edit variables for headers
+// Spacing
+$sidebar-width: 17rem;
+
+// Typography : A large part of this section is imported from the startbootstrap-resume project.
+$font-family-base: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, cursive, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-family: "Assistant", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 $headings-font-weight: 700;
 $headings-color: #343a40;
 $h1-font-size: 6rem;
