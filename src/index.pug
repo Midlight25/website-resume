@@ -37,9 +37,9 @@ html(lang='en')
 			#navbarContent.collapse.navbar-collapse
 				ul.navbar-nav
 					li.nav-item
-						a.nav-link About
+						a(href="#about").nav-link About
 					li.nav-item
-						a.nav-link Experience
+						a(href="#experience").nav-link Experience
 					li.nav-item
 						a.nav-link Education
 					li.nav-item
@@ -70,6 +70,44 @@ html(lang='en')
 						a.social_icon(href="#")
 							i.bi.bi-twitter(alt="Twitter")
 
-			hr.m-0
+			hr.mb-0
+
+			// My experience page.
+			section#experience.resume-section
+				.resume-section-content
+					h2.mb-5 Experience
+
+					.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+						.flex-grow-1
+							h3.mb-0 Esports Shift Lead
+							.subheading.mb-3 FAU Student Union Esports Arena
+							p Managed a small team to execute tasks towards ensuring the daily operation of an expensive and technologically-advanced gaming center. 
+								| Troubleshot hardware to resolve customer issues effectively and reduce maintence costs of equipment, saving valuble time of the IT department. 
+								| Collaborated with management to expand our business and generate new sources of revenue. 
+								| Designed and implemented proprietary tools using web-techonologies to streamline our business operations. Used #[em Google Apps Script] to make our operations efficient, 
+								| greener, and accurate.
+						.flex-shrink-0
+							span.text-primary February 2020 - Present
+
+					.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+						.flex-grow-1
+							h3.mb-0 Set Crew
+							.subheading.mb-3 FAU Student Union
+							p Safely managed and set up millions of dollars worth of equipment for events inside the Student Union. Executed complicated and detailed procedures 
+								| for all kinds of event setup. Provided technical assitance during events for Audio-Visual equipment. Troubleshot common problems with 
+								| Audio-Visual equipment to resolve customer issues effectively. Utilized proprietary event-management tools for the smooth execution of 
+								| events throughout the day. Collaborated closely with leadership to serve customer events effectively, efficiently, and to a higher standard of quality.
+						.flex-shrink-0
+							span.text-primary October 2019 - February 2020
+
+					.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+						.flex-grow-1
+							h3.mb-0 Customer Associate
+							.subheading.mb-3 Dunkin'
+							p Managed hundreds of transactions per day for a company worth $8.76 billion. Collaborated closely with patrons using active listening skills to 
+								| provide customized products specific to customer needs. Actively engaged in inventory management. Created a unique experience for every patron and 
+								| produced high customer-satisfaction ratings.
+						.flex-shrink-0
+							span.text-primary December 2018 - March 2019
 
 		script(src="./index.js")
