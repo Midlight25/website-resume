@@ -25,6 +25,13 @@ html(lang="en")
       href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;700&family=Comfortaa:wght@400;500;700&display=swap"
     )
 
+    // Importing icons from FontAwesome, just the Developer icons tho.
+    script(
+      defer,
+      src="https://kit.fontawesome.com/1134fbc170.js",
+      crossorigin="anonymous"
+    )
+
     // Importing main SCSS file, which it's self imports Bootstrap 5 for me to use.
     link(href="./scss/styles.scss", rel="stylesheet")
 
@@ -63,7 +70,7 @@ html(lang="en")
           li.nav-item
             a.nav-link(href="#education") Education
           li.nav-item
-            a.nav-link Skills
+            a.nav-link(href="#skills") Skills
           li.nav-item
             a.nav-link Interests
 
@@ -72,11 +79,10 @@ html(lang="en")
       // My about page!
       section#about.resume-section
         .resume-section-content
-          h1.mb-0 Michael
-            span.text-primary Mesquita
+          h1.mb-0 Michael #[span.text-primary Mesquita]
           .subheading.mb-4 Deerfield Beach, FL 33442 &bull; #[a(href="tel:9545734686") (954) 573-4686] &bull; #[a.d-none.d-lg-inline(href="mailto:mesquitamichael000@gmail.com") mesquitamichael000@gmail.com]#[a.d-inline.d-lg-none(href="mailto:mesquitamichael000@gmail.com") email me]
-          p.lead.mb-4 Developing solutions from the future using agile frameworks and automation to deliver continuous and rapid development that stops for nobody.
-            | Let's think collaboratively and work together to make technology seem like magic.
+          p.lead.mb-4 Developing solutions from the future using agile frameworks and automation to deliver continuous and rapid development that stops for nobody. Let's think collaboratively and work together to make technology seem like magic.
+
           .social_icons
             a.social_icon(
               href="https://www.linkedin.com/in/mmesquita000/",
@@ -162,5 +168,78 @@ html(lang="en")
               div Hardware Troubleshooting | IT Support | Corporate Network Management
             .flex-shrink-0
               span.text-primary Graduated May 2019
+
+      hr.m-0
+
+      // Skills Section
+      section#skills.resume-section
+        .resume-section-content
+          h2.mb-5 Skills
+
+          h4.mb-0 Programming Languages
+          ul.mb-0.list-inline.dev-icons
+            li.list-inline-item
+              i.fab.fa-html5
+            li.list-inline-item
+              i.fab.fa-css3-alt
+            li.list-inline-item
+              i.fab.fa-js-square
+            li.list-inline-item
+              i.fab.fa-node
+            li.list-inline-item
+              i.fab.fa-vuejs
+            li.list-inline-item
+              i.fab.fa-sass
+            li.list-inline-item
+              i.fab.fa-wordpress
+            li.list-inline-item
+              i.fab.fa-python
+
+          p.mb-4 Included on this list are C, C++, Pug, Typescript and Google Apps Script.
+
+          h4.mb-0 Development Tools and Skills.
+          ul.mb-0.list-inline.dev-icons
+            li.list-inline-item
+              i.fab.fa-git-alt
+            li.list-inline-item
+              i.fab.fa-github
+            li.list-inline-item
+              i.fab.fa-npm
+            li.fab.fa-linux
+          p.mb-4 I also use WSL2, Prettier, Parcel.js, and Electron.js. I am familiar with agile development, continuous integration, continuous delivery, testing-driven development, mobile-first, responsive design, and more.
+
+          h4.mb-2 Languages
+          ul.fa-ul.mb-4
+            li
+              span.fa-li
+                i.fas.fa-check
+              | English (Primary)
+            li
+              span.fa-li
+                i.fas.fa-check
+              | Portuguese (Fluent)
+            li
+              span.fa-li
+                i.fas.fa-check
+              | Spanish (Intermediate)
+
+          h4.mb-2 Other
+          ul.fa-ul.mb-4
+            li
+              span.fa-li
+                i.fas.fa-check
+              | Graphic Design
+            li
+              span.fa-li
+                i.fas.fa-check
+              | Video Editing
+            li
+              span.fa-li
+                i.fas.fa-check
+              | Hardware Troubleshooting
+            li
+              span.fa-li
+                i.fas.fa-check
+              | Principles and Concepts of Networking and Internet Traffic Mechanics
 
     script(src="./index.js")
