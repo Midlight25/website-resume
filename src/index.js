@@ -1,4 +1,4 @@
 // Importing Bootstrap
-import { collapse } from 'bootstrap';
+import { Collapse } from 'bootstrap';
 
 console.log("Modules Loaded");
