@@ -15,18 +15,19 @@ and reuses parts of the [Start Bootstrap - Resume](https://github.com/StartBoots
 
 ## Development Dependencies
 
-This project uses Node.js and npm extensively for development. Pug is used as the HTML pre-processor, Sass is used as the CSS pre-processor, Typescript is the scripting language of choice for this project. The project also uses Parcel to build and serve the content during development. This project also uses Bootstrap 5 as the front-end framework.
+This project uses Node.js and NPM for the development environment.
 
-There are two scripts in package.json to be used for development. Pug
+- Pug: The HTML pre-processor
+- Sass: The CSS pre-processor, necessary to modify the Bootstrap SCSS filesize
+- Typescript: The strong-typed scripting language for catching errors at compile time.
+- Parcel: The bundler used to simplify development, allowing me to link to pre-processor sources files directly instead of where the generated files would be in the distribution folder. This bulder also handles building output files for deployment, code splitting, tree shaking, and more. This
+- Bootstrap 5 Beta: The front-end CSS framework for building mobile-first web experiences. With this, I don't need to worry about writting CSS specifically for making mobile websites, everything is done for me.
 
-```npm
-npm run dev
-```
+## NPM Scripts
 
-This command is used to start the development environment and serve the content.
+- `npm run dev` Starts the development server and serves the content to a localhost. Hot Reloading is enabled.
+- `npm run build` builds the project for deployment.
 
-```npm
-npm run build
-```
+## Copywrite and license
 
-This command is used to build the project for deployment.
+This project is licensed under the [MIT License](https://github.com/Midlight25/website-resume/LICENSE). Parts of this project also reuse the [Start Bootstrap - Resume](https://github.com/StartBootstrap/startbootstrap-resume) project, which is also licensed under MIT.
