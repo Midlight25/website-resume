@@ -26,20 +26,13 @@ html(lang="en")
       href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;700&family=Comfortaa:wght@400;500;700&display=swap"
     )
 
-    // Importing icons from FontAwesome, just the Developer icons tho.
-    script(
-      defer,
-      src="https://kit.fontawesome.com/1134fbc170.js",
-      crossorigin="anonymous"
-    )
-
     // Importing main SCSS file, which it's self imports Bootstrap 5 for me to use.
     link(href="./scss/styles.scss", rel="stylesheet")
 
   // I want this website to have a very "business-card" like feel.
   body#pageTop
     // Navigation - Side-bar nav on desktops, classic navbar on mobile.
-    nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.sticky-top.px-4
+    nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top.px-4
       // The brand switches between my Profile Picture and my name, depending on what size the screen is at.
       a.navbar-brand(href="#")
         // My name for small screens with the standard nav-bar.
@@ -65,18 +58,38 @@ html(lang="en")
       #navbarContent.collapse.navbar-collapse
         ul.navbar-nav
           li.nav-item
-            a.nav-link(href="#about") About
+            a.nav-link(
+              href="#about",
+              rel="noopener norefferer",
+              aria-label="This is an external link (opens in a new tab)"
+            ) About
           li.nav-item
-            a.nav-link(href="#experience") Experience
+            a.nav-link(
+              href="#experience",
+              rel="noopener norefferer",
+              aria-label="This is an external link (opens in a new tab)"
+            ) Experience
           li.nav-item
-            a.nav-link(href="#education") Education
+            a.nav-link(
+              href="#education",
+              rel="noopener norefferer",
+              aria-label="This is an external link (opens in a new tab)"
+            ) Education
           li.nav-item
-            a.nav-link(href="#skills") Skills
+            a.nav-link(
+              href="#skills",
+              rel="noopener norefferer",
+              aria-label="This is an external link (opens in a new tab)"
+            ) Skills
           li.nav-item
-            a.nav-link(href="#interests") Interests
+            a.nav-link(
+              href="#interests",
+              rel="noopener norefferer",
+              aria-label="This is an external link (opens in a new tab)"
+            ) Interests
 
     // Body Content for Resume
-    .container-fluid
+    main.container-fluid
       // My about page!
       section#about.resume-section
         .resume-section-content
@@ -177,7 +190,7 @@ html(lang="en")
         .resume-section-content
           h2.mb-5 Skills
 
-          h4.mb-0 Programming Languages
+          h3.mb-0 Programming Languages
           ul.mb-0.list-inline.dev-icons
             li.list-inline-item
               i.fab.fa-html5
@@ -198,7 +211,7 @@ html(lang="en")
 
           p.mb-4 Included on this list are C, C++, Pug, Typescript and Google Apps Script.
 
-          h4.mb-0 Development Tools and Skills.
+          h3.mb-0 Development Tools and Skills.
           ul.mb-0.list-inline.dev-icons
             li.list-inline-item
               i.fab.fa-git-alt
@@ -209,7 +222,7 @@ html(lang="en")
             li.fab.fa-linux
           p.mb-4 I also use WSL2, Prettier, Parcel.js, and Electron.js. I am familiar with agile development, continuous integration, continuous delivery, testing-driven development, mobile-first, responsive design, and more.
 
-          h4.mb-2 Languages
+          h3.mb-2 Languages
           ul.fa-ul.mb-4
             li
               span.fa-li
@@ -224,7 +237,7 @@ html(lang="en")
                 i.fas.fa-check
               | Spanish (Intermediate)
 
-          h4.mb-2 Other
+          h3.mb-2 Other
           ul.fa-ul.mb-4
             li
               span.fa-li
@@ -252,4 +265,12 @@ html(lang="en")
 
           p As a developer my two passions are design work and automation. In essence, making art and being lazy! During my down time, I also enjoy video games, listening to music, and reading books. My favorite genre is fantasy and I love books with great world building. If I'm bored, I also like to research new development technologies to implement into my personal projects and perhaps introduce to my team.
 
-    script(src="./index.js")
+  // Importing Javascript for this page.
+  script(src="./index.js")
+
+  // Importing icons from FontAwesome, just the Developer icons tho.
+  script(
+    defer,
+    src="https://kit.fontawesome.com/1134fbc170.js",
+    crossorigin="anonymous"
+  )
