@@ -10,4 +10,5 @@ and reuses parts of the [Start Bootstrap - Resume](https://github.com/StartBoots
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Midlight25/website-resume/main/LICENSE)
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Midlight25/website-resume/main/LICENSE)
+[![Continuous Integration](https://github.com/Midlight25/website-resume/actions/workflows/continuous-integration.yml/badge.svg?branch=main&event=push)](https://github.com/Midlight25/website-resume/actions/workflows/continuous-integration.yml)

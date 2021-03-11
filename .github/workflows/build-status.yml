@@ -1,9 +1,9 @@
 # This workflow will test the integrity of the code comming from pull-requests and when version tagging.
-name: Pull-Request Testing
+name: Build Status
 
 on:
-  # Triggers the workflow on pull-request for main and develop branches.
-  pull_request:
+  # Triggers the workflow on push
+  push:
     branches: [main, develop]
 
 jobs:
