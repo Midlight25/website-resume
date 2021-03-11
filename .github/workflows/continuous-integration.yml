@@ -1,4 +1,4 @@
-# This workflow will test the integrity of the code comming from pull-requests and when version tagging.
+# This workflow will test the integrity of the code comming from pull-requests.
 name: Pull-Request Testing
 
 on:
