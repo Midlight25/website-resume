@@ -60,37 +60,32 @@ html(lang="en")
           li.nav-item
             a.nav-link(
               href="#about",
-              rel="noopener norefferer",
               aria-label="This is an external link (opens in a new tab)"
             ) About
           li.nav-item
             a.nav-link(
               href="#experience",
-              rel="noopener norefferer",
               aria-label="This is an external link (opens in a new tab)"
             ) Experience
           li.nav-item
             a.nav-link(
               href="#education",
-              rel="noopener norefferer",
               aria-label="This is an external link (opens in a new tab)"
             ) Education
           li.nav-item
             a.nav-link(
               href="#skills",
-              rel="noopener norefferer",
               aria-label="This is an external link (opens in a new tab)"
             ) Skills
           li.nav-item
             a.nav-link(
               href="#interests",
-              rel="noopener norefferer",
               aria-label="This is an external link (opens in a new tab)"
             ) Interests
 
     // Body Content for Resume
     main.container-fluid
-      // My about page!
+      // My about page. Due to problems with wrapping, on bigger screens my full email will be displayed. On smaller screens, the link will read "Email Me" instead.
       section#about.resume-section
         .resume-section-content
           h1.mb-0 Michael #[span.text-primary Mesquita]
@@ -100,17 +95,20 @@ html(lang="en")
           .social_icons
             a.social_icon(
               href="https://www.linkedin.com/in/mmesquita000/",
-              target="_blank"
+              target="_blank",
+              rel="noopener norefferer"
             )
               i.bi.bi-linkedin(alt="LinkedIn")
             a.social_icon(
               href="https://github.com/Midlight25",
-              target="_blank"
+              target="_blank",
+              rel="noopener norefferer"
             )
               i.bi.bi-github(alt="Github")
             a.social_icon(
               href="https://twitter.com/Midlight25",
-              target="_blank"
+              target="_blank",
+              rel="noopener norefferer"
             )
               i.bi.bi-twitter(alt="Twitter")
 
