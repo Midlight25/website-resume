@@ -1,16 +1,16 @@
 // Import Bootstrap Icons
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
-// Configuration
+// Bootstrap SCSS Configuration
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
 
-// Importing Variables
+// Importing Local Variables to override Bootstrap variables.
 @import "variables";
 
-// Components
+// Bootstrap SCSS Components
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
@@ -41,13 +41,13 @@
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
 
-// Helpers
+// Bootstrap SCSS Helpers
 @import "bootstrap/scss/helpers";
 
-// Utilities
+// Bootstrap SCSS Utilities API
 @import "bootstrap/scss/utilities/api";
 
-// Importing Components
+// Importing Local Components
 @import "global";
 @import "sections/resume-section";
 @import "components/icons";
