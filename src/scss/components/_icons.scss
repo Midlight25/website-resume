@@ -16,7 +16,7 @@
     height: 3.5rem;
     width: 3.5rem;
     // Make <a> element into a gray circle with white icon.
-    background-color: $gray-700;
+    background-color: $secondary;
     color: $white;
     border-radius: 100%;
     // Define size of icon within the <a> element.
@@ -41,4 +41,6 @@
 // Bootstrap utilities.
 .dev-icons {
   font-size: 3rem;
+  // This line is mine, changing color to use the secondary variable.
+  color: $secondary;
 }
