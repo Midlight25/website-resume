@@ -1,9 +1,20 @@
+/*!
+    * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
+    * Copyright 2013-2020 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+    */
+
+// Comments are mine to help me understand the SCSS behavior
+
+// Targeting links in navbar.
 #sideNav {
   .navbar-nav .nav-item .nav-link {
+    // Changed font-weight to make links easier to see
     font-weight: 700;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     &:hover {
+      // Removing underlining link behavior
       text-decoration: none;
     }
   }
@@ -42,19 +53,20 @@
       }
     }
 
-    // Controlling the nav-links
+    // Controlling the nav-links parent container
     #navbarContent {
-      // Nav-links takes up all available width within the navbar.
+      // Nav-links container parent will take the full width of the sidebar.
       width: 100%;
 
       // This settings equals out the effect of the auto margins in the navbar brand.
+      // Both element containers should now be pushed together towards the center.
       margin-bottom: auto;
 
       // Change display to flex-box and align flex-items to top of block.
       flex-grow: 0;
       align-items: flex-start;
 
-      // Controlling inner text block.
+      // Controlling inner text links
       .navbar-nav {
         // Items inherit display flex from #navbarContent. Set list direction.
         flex-direction: column;
