@@ -23,10 +23,22 @@ jobs:
       - name: Building Project
         run: npm run build
 
+      - name: Saving Output files
+        uses: actions/upload-artifact@v2
+        with:
+          name: bundled-files
+          path: dist/
+
+
   deploy:
     needs: build
+    runs-on: ubuntu-latest
 
     steps:
+      - name: Recovering Output files
+        uses: actions/download-artifact@v2
+          with: bundled-files
+
       - name: Deploying Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
