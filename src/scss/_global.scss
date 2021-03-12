@@ -1,7 +1,14 @@
+/*!
+    * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
+    * Copyright 2013-2020 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+    */
+
 // Global Styling for the website.
 
-// Set default text color
+// Set default text color and padding at the top for the "fixed-top" in mobile browsers.
 body {
+  padding-top: 3.75rem;
   color: $gray-600;
 }
 
@@ -39,7 +46,7 @@ p.lead {
   font-size: 1.5rem;
 }
 
-// Global modify links to look nicer.
+// These are my additions I globally modified links to remove text-decorations and look nicer.
 a {
   text-decoration: none;
   &:hover {
