@@ -1,0 +1,24 @@
+# This workflow will test the integrity of the code comming from pull-requests.
+name: Pull-Request Testing
+
+on:
+  # Triggers the workflow on pull-request for main and develop branches.
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Installing Node Dependencies
+        run: npm ci
+
+      - name: Building Project
+        run: npm run build

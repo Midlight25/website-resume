@@ -1,0 +1,55 @@
+/*!
+    * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
+    * Copyright 2013-2020 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+    */
+
+// Global Styling for the website.
+
+// Set default text color and padding at the top for the "fixed-top" in mobile browsers.
+body {
+  padding-top: 3.75rem;
+  color: $gray-600;
+}
+
+// Change body alignment setup to use side nav bar.
+@include media-breakpoint-up(lg) {
+  body {
+    padding-top: 0;
+    margin-left: $sidebar-width;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+h1 {
+  line-height: 1;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+// Create new subheading class for about section
+.subheading {
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+// These are my additions I globally modified links to remove text-decorations and look nicer.
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,36 @@
+# This workflow publishes the built website to the gh-pages connected to this repository.
+name: Website Deployment
+
+on:
+  # Triggers work flow on push to main branch
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    # This runner uses the latest Ubuntu release and Node v.14
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Installing Node Dependencies
+        run: npm ci
+
+      - name: Building Project
+        run: npm run build
+
+  deploy:
+    needs: build
+
+    steps:
+      - name: Deploying Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

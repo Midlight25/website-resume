@@ -1,0 +1,86 @@
+/*!
+    * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
+    * Copyright 2013-2020 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+    */
+
+// Comments are mine to help me understand the SCSS behavior
+
+// Targeting links in navbar.
+#sideNav {
+  .navbar-nav .nav-item .nav-link {
+    // Changed font-weight to make links easier to see
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    &:hover {
+      // Removing underlining link behavior
+      text-decoration: none;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #sideNav {
+    // Fix position of navbar to the left of the screen. Fix size to cover the entireity of the viewport vertically.
+    // Width is controlled through a variable in the _variables.scss file.
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $sidebar-width;
+    height: 100vh;
+
+    // Control position and direction of item stacking.
+    // This covers the text block and my portrait.
+    display: flex;
+    flex-direction: column;
+
+    // Apply text centering, all text elements in nav will inherit this trait.
+    text-align: center;
+
+    // Controlling portrait and my name.
+    .navbar-brand {
+      // This margin configuration will center children and place the children at the bottom of the element.
+      margin: auto auto 0;
+      padding: 0.5rem;
+
+      // Portrait specific details
+      #profilePicture {
+        max-width: 10rem;
+        max-height: 10rem;
+        // The border's colors will change depending on the background.
+        border: 0.5rem solid fade-out($white, 0.8);
+      }
+    }
+
+    // Controlling the nav-links parent container
+    #navbarContent {
+      // Nav-links container parent will take the full width of the sidebar.
+      width: 100%;
+
+      // This settings equals out the effect of the auto margins in the navbar brand.
+      // Both element containers should now be pushed together towards the center.
+      margin-bottom: auto;
+
+      // Change display to flex-box and align flex-items to top of block.
+      flex-grow: 0;
+      align-items: flex-start;
+
+      // Controlling inner text links
+      .navbar-nav {
+        // Items inherit display flex from #navbarContent. Set list direction.
+        flex-direction: column;
+        // Set inner text block to maximum width: will prevent links being chopped up due to bounding box sizes.
+        width: 100%;
+        .nav-item {
+          // Every item should be in it's own display box.
+          display: block;
+        }
+        .nav-link {
+          // Every item should be in it's own display box.
+          display: block;
+        }
+      }
+    }
+  }
+}

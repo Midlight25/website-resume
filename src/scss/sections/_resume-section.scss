@@ -1,0 +1,30 @@
+/*!
+    * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
+    * Copyright 2013-2020 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+    */
+
+section.resume-section {
+  display: flex;
+  align-items: center;
+  // I compressed this padding line.
+  padding: 5rem 1rem 5rem 1rem;
+  max-width: 75rem;
+  .resume-section-content {
+    // Content should take up all of the space aloted inside of it's parent element.
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  section.resume-section {
+    // I also compressed this padding line.
+    padding: 5rem 3rem 5rem 3rem;
+  }
+}
