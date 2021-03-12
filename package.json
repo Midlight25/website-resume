@@ -5,7 +5,7 @@
   "main": "dest/index.html",
   "scripts": {
     "dev": "parcel serve src/index.pug",
-    "build": "parcel build src/index.pug --detailed-report 5"
+    "build": "parcel build --public-url ./ src/index.pug --detailed-report 5"
   },
   "repository": {
     "type": "git",
