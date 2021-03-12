@@ -1,16 +1,20 @@
-/*
-	COPYWRITE NOTICE: Parts of this code reuse the startbootstrap-resume project by Startbootstrap.com. These
-	parts of the code are licensed under MIT. Please see the copyright notice file for more details.
-*/
+/*! Parts of this file reuse the Start Bootstrap - Resume Project.
+    * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
+    * Copyright 2013-2020 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+    */
 
-// Spacing
+// Spacing Controls
 $sidebar-width: 17rem;
 
-// Typography : A large part of this section is imported from the startbootstrap-resume project.
+// Typography
+
+// The font stack, excluding "Comfortaa" is directly imported from the Bootstrap Website.
 $font-family-base: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, "Helvetica Neue", Arial, cursive, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
+// The font stack, excluding "Assistant" is directly imported from the Bootstrap Website.
 $headings-font-family: "Assistant", -apple-system, BlinkMacSystemFont,
   "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -22,5 +26,4 @@ $h2-font-size: 3.5rem;
 $h3-font-size: 2rem;
 
 // Color
-$yiq-contrasted-threshold: 205;
 $primary: #266ba8;
