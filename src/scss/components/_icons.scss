@@ -1,25 +1,44 @@
+/*!
+    * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
+    * Copyright 2013-2020 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+    */
+
+// Comments are mine to help me understand what that line is doing.
+
 .social_icons {
   .social_icon {
+    // Create a flex-box within the <a> element. Center items in the <a> element.
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    // Define size of <a> element
     height: 3.5rem;
     width: 3.5rem;
+    // Make <a> element into a gray circle with white icon.
     background-color: $gray-700;
     color: $white;
     border-radius: 100%;
+    // Define size of icon within the <a> element.
     font-size: 1.5rem;
+    // Define spacing between icons.
     margin-right: 1.5rem;
+    // This line is mine, Bootstrap Icons have a line height of 1.5 rems.
+    // Bootstrap Icons are not vertically centered in the element.
     line-height: 1rem;
+    // No margin on the last social icon.
     &:last-child {
       margin-right: 0;
     }
+    // Add highlighting behavior to make element "interactable."
     &:hover {
       background-color: $primary;
     }
   }
 }
 
+// Just need to define size since we're not doing anything special to these icons. Spacing and margins are handled by
+// Bootstrap utilities.
 .dev-icons {
   font-size: 3rem;
 }
