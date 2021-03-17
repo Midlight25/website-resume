@@ -1,17 +1,15 @@
 doctype html
 html(lang="en")
   head
-    title Michael Mesquita - Modern Front-End Developer
+    title Michael Mesquita - Aspiring Modern Developer
 
+    // Meta tags at the beginning for correct rendering.
     meta(charset="utf-8")
     meta(
       name="description",
       content="A web resume built using Pug, Sass, Typescript, and Bootstrap v5. Developed and bundled with Parcel. This website demos fast and agile front end development using modern tools, bringing technologies of the future, today. Kudos to Bootstrap for their amazing front-end development framework and their icons. Inspired by the startboostrap-resume project by StartBootstrap.com."
     )
-    meta(
-      name="author",
-      content="Michael Mesquita A.K.A Midlight25 (mesquitamichael000@gmail.com)"
-    )
+    meta(name="author", content="Michael Mesquita")
     meta(
       name="keywords",
       content="HTML, HTML5, CSS, SCSS, SASS, JavaScript, TypeScript, Pug, Node.js, Parcel, Front-End Development, Development, Website Development"
@@ -19,8 +17,16 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
 
-    // Import and use favicon.ico
-    link(rel="shortcut icon", type="image/svg", href="assets/favicon.svg")
+    // Defining meta tags for browser header color support
+    // Chrome, Firefox, and Opera
+    meta(name='theme-color', content='#2F70FF')
+    // Windows Applications
+    meta(name='msapplication-navbutton-color', content='#2F70FF')
+    // iOS Safari
+    meta(name="apple-mobile-web-app-status-bar-style", content="#2F70FF")
+
+    // Importing main SCSS file, which it's self imports Bootstrap 5 for me to use.
+    link(href="./scss/styles.scss", rel="stylesheet")
 
     // Importing Fonts from Google Fonts
     link(rel="preconnect", href="https://fonts.gstatic.com")
@@ -29,10 +35,16 @@ html(lang="en")
       href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;700&family=Comfortaa:wght@400;500;700&display=swap"
     )
 
-    // Importing main SCSS file, which it's self imports Bootstrap 5 for me to use.
-    link(href="./scss/styles.scss", rel="stylesheet")
+    // Favicon Imports
+    // For normal browsers, use the svg file for infinite scaling.
+    link(rel="icon", type="image/svg+xml", href="assets/favicon.svg")
+    // For legacy browsers, include the ico file.
+    link(rel="icon", type="image/ico", href="assets/favicon.ico")
+    // Apple Touch Devices
+    link(rel="apple-touch-icon", href="assets/apple-touch-icon.png")
+    // Including web-manifest for Android devices
+    link(rel="manifest", href="./manifest.webmanifest")
 
-  // I want this website to have a very "business-card" like feel.
   body#pageTop.bg-light
     // Navigation - Side-bar nav on desktops, classic navbar on mobile.
     nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top.px-4
