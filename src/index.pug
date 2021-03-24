@@ -45,7 +45,7 @@ html(lang="en")
     // Including web-manifest for Android devices
     link(rel="manifest", href="./manifest.webmanifest")
 
-  body#pageTop.bg-light
+  body#pageTop.bg-light(data-bs-spy="scroll", data-bs-target="#navbarContent")
     // Navigation - Side-bar nav on desktops, classic navbar on mobile.
     nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top.px-4
       // The brand switches between my Profile Picture and my name, depending on what size the screen is at.
