@@ -45,7 +45,7 @@ html(lang="en")
     // Including web-manifest for Android devices
     link(rel="manifest", href="./manifest.webmanifest")
 
-  body#pageTop.bg-light
+  body#pageTop.bg-light(data-bs-spy="scroll", data-bs-target="#navbarContent")
     // Navigation - Side-bar nav on desktops, classic navbar on mobile.
     nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top.px-4
       // The brand switches between my Profile Picture and my name, depending on what size the screen is at.
@@ -75,27 +75,27 @@ html(lang="en")
           li.nav-item
             a.nav-link(
               href="#about",
-              aria-label="This is an external link (opens in a new tab)"
+              aria-label="This link takes you to this resume's About section."
             ) About
           li.nav-item
             a.nav-link(
               href="#experience",
-              aria-label="This is an external link (opens in a new tab)"
+              aria-label="This link takes you to this resume's Work Experience section."
             ) Experience
           li.nav-item
             a.nav-link(
               href="#education",
-              aria-label="This is an external link (opens in a new tab)"
+              aria-label="This link takes you to this resume's Education section."
             ) Education
           li.nav-item
             a.nav-link(
               href="#skills",
-              aria-label="This is an external link (opens in a new tab)"
+              aria-label="This link takes you to this resume's Skills section."
             ) Skills
           li.nav-item
             a.nav-link(
               href="#interests",
-              aria-label="This is an external link (opens in a new tab)"
+              aria-label="This link takes you to this resume's Interests section."
             ) Interests
 
     // Body Content for Resume
@@ -111,19 +111,22 @@ html(lang="en")
             a.social_icon(
               href="https://www.linkedin.com/in/mmesquita000/",
               target="_blank",
-              rel="noopener norefferer"
+              rel="noopener noreferrer",
+              aria-label="This link takes you to the developer's Linked-in profile."
             )
               i.bi.bi-linkedin(alt="LinkedIn")
             a.social_icon(
               href="https://github.com/Midlight25",
               target="_blank",
-              rel="noopener norefferer"
+              rel="noopener noreferrer",
+              aria-label="This link takes you to the developer's GitHub page."
             )
               i.bi.bi-github(alt="Github")
             a.social_icon(
               href="https://twitter.com/Midlight25",
               target="_blank",
-              rel="noopener norefferer"
+              rel="noopener noreferrer",
+              aria-label="This link takes you to the developer's Twitter profile."
             )
               i.bi.bi-twitter(alt="Twitter")
 
@@ -279,7 +282,7 @@ html(lang="en")
           p As a developer my two passions are design work and automation. In essence, making art and being extremely efficient! During my downtime, I also enjoy video games, listening to music, and reading books. My favorite genre is fantasy and I love books with great world-building. If I'm bored, I also like to research new development technologies to implement into my personal projects and perhaps introduce them to my team.
 
   // Importing Javascript for this page.
-  script(src="./index.js")
+  script(src="./index.ts")
 
   // Importing icons from FontAwesome, just the Developer icons tho.
   script(
