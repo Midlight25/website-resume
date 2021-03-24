@@ -105,3 +105,6 @@ dist
 
 # Parcel Bundler Cache
 .parcel-cache
+
+# Removing vscode configuration files.
+.vs-code
