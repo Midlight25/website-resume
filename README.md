@@ -16,8 +16,8 @@ and reuses parts of the [Start Bootstrap - Resume](https://github.com/StartBoots
 
 ## NPM Scripts
 
-- `npm run dev` Starts the development server and serves the content to a localhost. Hot Reloading is enabled.
-- `npm run build` builds the project for deployment.
+- `npm run start` Starts the development server and serves the content to a localhost. Hot Reloading is enabled.
+- `npm run build` builds the project for deployment. Files are minified, tree-shaken, and bundled for deployment.
 
 ## Technologies used
 
